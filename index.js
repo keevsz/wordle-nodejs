@@ -1,4 +1,8 @@
 const app = require("./src/app")
-require("./src/db")
+require("dotenv").config()
 
-app.listen(5000, console.log("Iniciando"))
+const PORT = process.env.PORT || 5000
+app.listen(PORT, () => {
+  console.log("Puerto: " + PORT)
+  console.log("Conectando...")
+})

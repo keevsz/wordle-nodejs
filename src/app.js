@@ -3,8 +3,9 @@ const passport = require("passport")
 const session = require("express-session")
 const MongoStore = require("connect-mongo")
 var cookieParser = require("cookie-parser")
+const database = require("./db")
 
-const { URI } = require("./config")
+const { URI, SESSIONSECRET, DBNAME, MODO } = require("./config")
 
 const exphbs = require("express-handlebars")
 const path = require("path")
@@ -15,13 +16,18 @@ app.set("trust proxy", 1)
 
 app.use(
   session({
-    secret: "hola",
+    secret: SESSIONSECRET,
     name: "kvs-wordle",
     saveUninitialized: false,
     resave: false,
     store: MongoStore.create({
-      mongoUrl: URI,
+      clientPromise: database,
+      dbName: DBNAME,
     }),
+    cookie: {
+      secure: MODO === "production",
+      maxAge: 30 * 24 * 60 * 60 * 1000,
+    },
   })
 )
 
