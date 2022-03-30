@@ -75,7 +75,7 @@ function verifyWord(wordArray) {
   const wordverifier = wordArray.join("")
   document.getElementById("hiddenWord").value = wordverifier
   document.form.submit()
-  setTimeout(stopLoad, 800)
+  setTimeout(stopLoad, 1000)
 
   //Pistas
   setTimeout(tracks, 1000)
