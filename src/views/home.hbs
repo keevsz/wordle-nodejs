@@ -1,0 +1,119 @@
+<div class="grid mx-auto h-screen">
+
+  <div class="content-start mx-auto">
+   <div class="font-bold pb-3 border-solid text-3xl text-center border-b-4 border-dark">
+      WORDLE (ES)
+   </div>
+  </div>
+
+  <div class="content-center mx-auto " id="wordContainer">
+    <div class="flex my-1" >
+      <input type="text" id="firstWord" class="font-bold text-center mx-auto text-3xl border-solid border-2 border-gray-300 w-16 h-16 mx-1"></input>
+      <input type="text" id="firstWord" class="font-bold text-center mx-auto text-3xl border-solid border-2 border-gray-300 w-16 h-16 mx-1"></input>
+      <input type="text" id="firstWord" class="font-bold text-center mx-auto text-3xl border-solid border-2 border-gray-300 w-16 h-16 mx-1"></input>
+      <input type="text" id="firstWord" class="font-bold text-center mx-auto text-3xl border-solid border-2 border-gray-300 w-16 h-16 mx-1"></input>
+      <input type="text" id="firstWord" class="font-bold text-center mx-auto text-3xl border-solid border-2 border-gray-300 w-16 h-16 mx-1"></input>
+    </div> 
+    <div class="flex my-1" >
+      <input type="text" id="secondWord" class="font-bold text-center mx-auto text-3xl border-solid border-2 border-gray-300 w-16 h-16 mx-1"></input> 
+      <input type="text" id="secondWord" class="font-bold text-center mx-auto text-3xl border-solid border-2 border-gray-300 w-16 h-16 mx-1"></input> 
+      <input type="text" id="secondWord" class="font-bold text-center mx-auto text-3xl border-solid border-2 border-gray-300 w-16 h-16 mx-1"></input> 
+      <input type="text" id="secondWord" class="font-bold text-center mx-auto text-3xl border-solid border-2 border-gray-300 w-16 h-16 mx-1"></input> 
+      <input type="text" id="secondWord" class="font-bold text-center mx-auto text-3xl border-solid border-2 border-gray-300 w-16 h-16 mx-1"></input>
+    </div> 
+
+    <div class="flex my-1" >
+      <input type="text" id="thirdWord" class="font-bold text-center mx-auto text-3xl border-solid border-2 border-gray-300 w-16 h-16 mx-1"></input> 
+      <input type="text" id="thirdWord" class="font-bold text-center mx-auto text-3xl border-solid border-2 border-gray-300 w-16 h-16 mx-1"></input> 
+      <input type="text" id="thirdWord" class="font-bold text-center mx-auto text-3xl border-solid border-2 border-gray-300 w-16 h-16 mx-1"></input> 
+      <input type="text" id="thirdWord" class="font-bold text-center mx-auto text-3xl border-solid border-2 border-gray-300 w-16 h-16 mx-1"></input> 
+      <input type="text" id="thirdWord" class="font-bold text-center mx-auto text-3xl border-solid border-2 border-gray-300 w-16 h-16 mx-1"></input>
+    </div> 
+
+    <div class="flex my-1" >
+      <input type="text" id="quarterWord" class="font-bold text-center mx-auto text-3xl border-solid border-2 border-gray-300 w-16 h-16 mx-1"></input> 
+      <input type="text" id="quarterWord" class="font-bold text-center mx-auto text-3xl border-solid border-2 border-gray-300 w-16 h-16 mx-1"></input> 
+      <input type="text" id="quarterWord" class="font-bold text-center mx-auto text-3xl border-solid border-2 border-gray-300 w-16 h-16 mx-1"></input> 
+      <input type="text" id="quarterWord" class="font-bold text-center mx-auto text-3xl border-solid border-2 border-gray-300 w-16 h-16 mx-1"></input> 
+      <input type="text" id="quarterWord" class="font-bold text-center mx-auto text-3xl border-solid border-2 border-gray-300 w-16 h-16 mx-1"></input>
+    </div> 
+
+    <div class="flex my-1" >
+      <input type="text" id="fifthWord" class="font-bold text-center mx-auto text-3xl border-solid border-2 border-gray-300 w-16 h-16 mx-1"></input> 
+      <input type="text" id="fifthWord" class="font-bold text-center mx-auto text-3xl border-solid border-2 border-gray-300 w-16 h-16 mx-1"></input> 
+      <input type="text" id="fifthWord" class="font-bold text-center mx-auto text-3xl border-solid border-2 border-gray-300 w-16 h-16 mx-1"></input> 
+      <input type="text" id="fifthWord" class="font-bold text-center mx-auto text-3xl border-solid border-2 border-gray-300 w-16 h-16 mx-1"></input> 
+      <input type="text" id="fifthWord" class="font-bold text-center mx-auto text-3xl border-solid border-2 border-gray-300 w-16 h-16 mx-1"></input>
+    </div> 
+
+    <div class="flex my-1" >
+      <input type="text" id="sixthWord" class="font-bold text-center mx-auto text-3xl border-solid border-2 border-gray-300 w-16 h-16 mx-1"></input> 
+      <input type="text" id="sixthWord" class="font-bold text-center mx-auto text-3xl border-solid border-2 border-gray-300 w-16 h-16 mx-1"></input> 
+      <input type="text" id="sixthWord" class="font-bold text-center mx-auto text-3xl border-solid border-2 border-gray-300 w-16 h-16 mx-1"></input> 
+      <input type="text" id="sixthWord" class="font-bold text-center mx-auto text-3xl border-solid border-2 border-gray-300 w-16 h-16 mx-1"></input> 
+      <input type="text" id="sixthWord" class="font-bold text-center mx-auto text-3xl border-solid border-2 border-gray-300 w-16 h-16 mx-1"></input>
+    </div> 
+    
+  </div>
+
+  <div class="grid mb-10 content-end mx-auto" id="keybContainer">
+    <div class="flex my-1">
+      <button id="keyb" data-letter="q" class="font-bold rounded-md bg-gray-300 w-12 h-14 mx-0.5">Q</button>
+      <button id="keyb" data-letter="w" class="font-bold rounded-md bg-gray-300 w-12 h-14 mx-0.5">W</button>
+      <button id="keyb" data-letter="e" class="font-bold rounded-md bg-gray-300 w-12 h-14 mx-0.5">E</button>
+      <button id="keyb" data-letter="r" class="font-bold rounded-md bg-gray-300 w-12 h-14 mx-0.5">R</button>
+      <button id="keyb" data-letter="t" class="font-bold rounded-md bg-gray-300 w-12 h-14 mx-0.5">T</button>
+      <button id="keyb" data-letter="y" class="font-bold rounded-md bg-gray-300 w-12 h-14 mx-0.5">Y</button>
+      <button id="keyb" data-letter="u" class="font-bold rounded-md bg-gray-300 w-12 h-14 mx-0.5">U</button>
+      <button id="keyb" data-letter="i" class="font-bold rounded-md bg-gray-300 w-12 h-14 mx-0.5">I</button>
+      <button id="keyb" data-letter="o" class="font-bold rounded-md bg-gray-300 w-12 h-14 mx-0.5">O</button>
+      <button id="keyb" data-letter="p" class="font-bold rounded-md bg-gray-300 w-12 h-14 mx-0.5">P</button>
+    </div>
+    <div class="flex my-1">
+      <button id="keyb" data-letter="a" class="font-bold rounded-md bg-gray-300 w-12 h-14 mx-0.5">A</button>
+      <button id="keyb" data-letter="s" class="font-bold rounded-md bg-gray-300 w-12 h-14 mx-0.5">S</button>
+      <button id="keyb" data-letter="d" class="font-bold rounded-md bg-gray-300 w-12 h-14 mx-0.5">D</button>
+      <button id="keyb" data-letter="f" class="font-bold rounded-md bg-gray-300 w-12 h-14 mx-0.5">F</button>
+      <button id="keyb" data-letter="g" class="font-bold rounded-md bg-gray-300 w-12 h-14 mx-0.5">G</button>
+      <button id="keyb" data-letter="h" class="font-bold rounded-md bg-gray-300 w-12 h-14 mx-0.5">H</button>
+      <button id="keyb" data-letter="j" class="font-bold rounded-md bg-gray-300 w-12 h-14 mx-0.5">J</button>
+      <button id="keyb" data-letter="k" class="font-bold rounded-md bg-gray-300 w-12 h-14 mx-0.5">K</button>
+      <button id="keyb" data-letter="l" class="font-bold rounded-md bg-gray-300 w-12 h-14 mx-0.5">L</button>
+      <button id="keyb" data-letter="ñ" class="font-bold rounded-md bg-gray-300 w-12 h-14 mx-0.5">Ñ</button>
+    </div>  
+    <div class="my-1 mx-auto">      
+      <button id="keyb" data-letter="z" class="font-bold rounded-md bg-gray-300 w-12 h-14 mx-0.5">Z</button>
+      <button id="keyb" data-letter="x" class="font-bold rounded-md bg-gray-300 w-12 h-14 mx-0.5">X</button>
+      <button id="keyb" data-letter="c" class="font-bold rounded-md bg-gray-300 w-12 h-14 mx-0.5">C</button>
+      <button id="keyb" data-letter="v" class="font-bold rounded-md bg-gray-300 w-12 h-14 mx-0.5">V</button>
+      <button id="keyb" data-letter="b" class="font-bold rounded-md bg-gray-300 w-12 h-14 mx-0.5">B</button>
+      <button id="keyb" data-letter="n" class="font-bold rounded-md bg-gray-300 w-12 h-14 mx-0.5">N</button>
+      <button id="keyb" data-letter="m" class="font-bold rounded-md bg-gray-300 w-12 h-14 mx-0.5">M</button>
+      <button id="keyb" data-letter="del" class="font-bold rounded-md bg-gray-300 w-12 h-14 mx-0.5"><</button> 
+      <form action="/verify" name="form" class="text-center mt-3" method="POST" id="form-submit">
+        <input type="hidden" id="hiddenWord" name="word">
+        <button type="button" id="btn-form" class="font-bold rounded-md bg-gray-300 w-64 h-14 mx-0.5">Enviar</button>
+      </form>   
+    </div>
+  </div>
+</div>
+
+
+<div id="modal" class="fixed hidden z-50 inset-0 bg-gray-900 bg-opacity-60 overflow-y-auto h-full w-full px-4">
+    <div class="relative top-40 mx-auto shadow-lg rounded-md bg-white max-w-md">
+
+        <!-- Modal header -->
+        <div class="flex justify-between items-center bg-green-500 text-white text-xl rounded-t-md px-4 py-2">
+            <h3>Resultado</h3>
+            <button onclick="closeModal()">-</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="max-h-48 overflow-y-scroll p-4 my-2">
+            <p class="text-center my-2 text-xl">Felicidades, lograste acertar la palabra</p>    
+            <img class="mx-auto w-1/4 my-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Light_green_check.svg/2048px-Light_green_check.svg.png" alt="">        
+        </div>
+
+        
+    </div>
+</div>
